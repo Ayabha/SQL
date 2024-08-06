@@ -11,10 +11,13 @@ Drop Table If Exists CompanyInfo1Backup
 Select * Into CompanyInfo1Backup
  From CompanyInfo1
 
+ --Update CompanyInfo1 Table
 Update CompanyInfo1
 Set FirstName = 'Alfred'
 Where FirstName = 'Adam'
 
+
+--Fetching CompanyInfo1 Records
 Select *
 From CompanyInfo1Backup
 SELECT [FirstName]
