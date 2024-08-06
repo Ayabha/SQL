@@ -11,10 +11,12 @@ Drop Table If Exists Business2Backup
 Select * Into Business2Backup
 From Business2
 
+--Updating Noble Table
 Update Business2
 Set Address = 'Calkuta'
 Where Address= 'Mumbai'
 
+--Select All Records
 Select * 
 From Business2Backup
 SELECT [ID]
