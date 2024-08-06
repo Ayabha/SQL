@@ -13,16 +13,16 @@ Begin
 Drop Table If Exists spPullworld3Data
 
 
---Creating A Backup Table
+--Creating Backup
 Select *Into World3Backup
 From world3
 
---Updating World3
+--World3 Updated
 Update world3
 Set CountryName = 'Cyprus'
 Where CountryName ='Afghanistan'
 
---Fetching All Records 
+--All Records Fetched
 Select *
 From world3Backup
 SELECT[CountryName]
