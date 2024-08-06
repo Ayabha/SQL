@@ -11,10 +11,12 @@ Drop Table If Exists GamesBackup
 Select * Into GamesBackup
 From Games
 
+--Updating Games Table
 Update Games
 Set Year= 1999
 Where Year= 2008
 
+--Fetching All Records
 Select *
 From GamesBackup
 SELECT [Year]
